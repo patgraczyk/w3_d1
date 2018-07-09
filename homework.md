@@ -23,6 +23,8 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
 ## Questions
 
 1.  Return ALL the data in the 'movies' table.
+
+
 SELECT * FROM movies;
 
  id |                title                | year | show_time 
@@ -48,7 +50,7 @@ SELECT * FROM movies;
  19 | Black Panther                       | 2018 | 12:45
 
 
-2.  Return ONLY the name column from the 'people' table
+2. 2. Return ONLY the name column from the 'people' table
 
 SELECT name FROM people;
 
@@ -76,7 +78,7 @@ SELECT name FROM people;
  Donald Trump
 
 
-3.  Oops! Someone at CodeClan spelled Vicky's name wrong! Change it to reflect the proper spelling ('Vicky Jackson-Five' should be 'Vicky Jackson').
+3.  3. Oops! Someone at CodeClan spelled Vicky's name wrong! Change it to reflect the proper spelling ('Vicky Jackson-Five' should be 'Vicky Jackson').
 
 UPDATE people SET name = 'Vicky Jackson'
 		WHERE name = 'Vicky Jackson-Five';
@@ -335,6 +337,8 @@ DELETE 2
  20 | Avengers: Infinity War              | 2017 | 00:00
  16 | Guardians of the Galaxy 2           | 2017 | 24:20
 (17 rows)
+
+---- option 
 
 DELETE FROM movies WHERE year <> 2017;
 SELECT * FROM movies;
