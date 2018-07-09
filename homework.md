@@ -283,3 +283,71 @@ UPDATE 1
 ## Extension
 
 1.  Research how to delete multiple entries from your table in a single command.
+
+
+DELETE FROM people WHERE name in ('Stuart Black','Joanna Gora');
+SELECT * FROM people;
+
+DELETE FROM movies WHERE id in (6, 8);
+SELECT * FROM movies;
+
+DELETE 2
+ id |       name       
+----+------------------
+  2 | Euan Cunningham
+  3 | Mark Ditzel
+  4 | Tahnee Downie
+  5 | Molly Drumm
+  6 | Robbie Dumbrell
+  7 | Beata Ficek
+  9 | Patrycja Graczyk
+ 11 | Marcin Jerwan
+ 12 | Garry McCrum
+ 13 | Gemma Percival
+ 14 | Digory Philbrow
+ 15 | Ricardo Ruiz
+ 16 | Kirstin Ryan
+ 17 | Mike Thorpe
+ 18 | Raphael Ugha
+ 19 | Emil Vaklinov
+ 10 | Vicky Jackson
+ 21 | Alex B
+(18 rows)
+
+DELETE 2
+ id |                title                | year | show_time 
+----+-------------------------------------+------+-----------
+  1 | Iron Man                            | 2008 | 18:45
+  2 | The Incredible Hulk                 | 2008 | 13:35
+  3 | Iron Man 2                          | 2010 | 16:55
+  4 | Thor                                | 2011 | 15:05
+  5 | Captain America: The First Avenger  | 2011 | 20:05
+  7 | Iron Man 3                          | 2013 | 21:55
+ 10 | Captain America: The Winter Soldier | 2014 | 15:40
+ 11 | Guardians of the Galaxy             | 2014 | 22:20
+ 12 | Avengers: Age of Ultron             | 2015 | 21:55
+ 13 | Ant-Man                             | 2015 | 21:20
+ 14 | Captain America: Civil War          | 2016 | 16:15
+ 15 | Doctor Strange                      | 2016 | 23:50
+ 17 | Spider-Man: Homecoming              | 2017 | 20:45
+ 18 | Thor: Ragnarok                      | 2017 | 15:20
+ 19 | Black Panther                       | 2018 | 12:45
+ 20 | Avengers: Infinity War              | 2017 | 00:00
+ 16 | Guardians of the Galaxy 2           | 2017 | 24:20
+(17 rows)
+
+DELETE FROM movies WHERE year <> 2017;
+SELECT * FROM movies;
+
+DELETE 13
+ id |           title           | year | show_time 
+----+---------------------------+------+-----------
+ 17 | Spider-Man: Homecoming    | 2017 | 20:45
+ 18 | Thor: Ragnarok            | 2017 | 15:20
+ 20 | Avengers: Infinity War    | 2017 | 00:00
+ 16 | Guardians of the Galaxy 2 | 2017 | 24:20
+(4 rows)
+
+
+
+

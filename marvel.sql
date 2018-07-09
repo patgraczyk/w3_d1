@@ -88,3 +88,16 @@ SELECT show_time FROM movies
 UPDATE movies SET show_time = '24:20'
 		WHERE title = 'Guardians of the Galaxy 2';
 SELECT * FROM movies;
+
+------extension --------------
+
+DELETE FROM people WHERE name in ('Stuart Black','Joanna Gora');
+SELECT * FROM people;
+
+DELETE FROM movies WHERE id in (6, 8);
+SELECT * FROM movies;
+
+
+--options
+DELETE FROM movies WHERE year <> 2017;
+SELECT * FROM movies;
